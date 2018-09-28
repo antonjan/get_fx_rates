@@ -2,6 +2,11 @@
 This java class will fetch the FX rates for Africa.<br>
 This application depends on jsoup API https://jsoup.org/<br>
 <br>
+## Prepair your ENV
+install Java openjdk<br>
+sudo apt-get install openjdk-11-jdk-headless<br>
+Get dependensie jar<jbr>
+wget  https://jsoup.org/packages/jsoup-1.11.3.jar<br>
 ## Compiling the java code.
 javac -cp ./jsoup-1.11.3.jar ./Get_fx_rates_from_SBSA.java<br>
 <br>
