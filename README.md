@@ -2,7 +2,12 @@
 This java class will fetch the FX rates for Africa.<br>
 This application depends on jsoup API https://jsoup.org/<br>
 <br>
-Exsample of output.<br>
+## Compiling the java code.
+javac -cp ./jsoup-1.11.3.jar ./Get_fx_rates_from_SBSA.java<br>
+<br>
+## Run compiled java
+java -cp ./jsoup-1.11.3.jar:. Get_fx_rates_from_SBSA<br>
+## Exsample of output.<br>
 23 BRITSH POUND,GBP,18.1333,18.0864,18.0061,18.6173,18.7105<br>
 30 EURO,EUR,16.1652,16.1188,16.0392,16.5989,16.6274<br>
 37 UNITED STATES DOL,USD,13.9775,13.9146,13.9700,14.2950,14.2950<br>
