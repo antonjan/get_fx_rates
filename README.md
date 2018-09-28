@@ -12,6 +12,10 @@ javac -cp ./jsoup-1.11.3.jar ./Get_fx_rates_from_SBSA.java<br>
 <br>
 ## Run compiled java
 java -cp ./jsoup-1.11.3.jar:. Get_fx_rates_from_SBSA<br>
+## Rates update
+It looks like the Rases update every 30min so no need to get an update le than 30 min.<br> 
+Example of cron scedule.<br>
+<br>  
 ## Exsample of output.<br>
 23 BRITSH POUND,GBP,18.1333,18.0864,18.0061,18.6173,18.7105<br>
 30 EURO,EUR,16.1652,16.1188,16.0392,16.5989,16.6274<br>
