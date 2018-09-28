@@ -13,7 +13,7 @@ javac -cp ./jsoup-1.11.3.jar ./Get_fx_rates_from_SBSA.java<br>
 ## Run compiled java
 java -cp ./jsoup-1.11.3.jar:. Get_fx_rates_from_SBSA<br>
 ## Rates update
-It looks like the Rases update every 30min so no need to get an update le than 30 min.<br> 
+It looks like the Rases update every 30min so no need to get an update les than 30 min.<br> 
 Example of cron scedule.<br>
 <br>  
 ## Exsample of output.<br>
