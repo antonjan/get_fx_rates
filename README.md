@@ -16,7 +16,7 @@ java -cp ./jsoup-1.11.3.jar:. Get_fx_rates_from_SBSA<br>
 It looks like the Rases update every 30min so no need to get an update les than 30 min.<br> 
 Example of cron scedule.<br>
 <br>  
-## Calculating crose currensy
+## Calculating cross currensy
 Example<br>
 <br>
 To calculate the cross-rate between Sterling (GBP) and the Mexican Peso (MXN), using the US Dollar (USD) as the common currency. Let us assume that rates are quoted as follows:<br>
