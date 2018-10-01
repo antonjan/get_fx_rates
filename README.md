@@ -27,6 +27,17 @@ To calculate the cross-rate between Sterling (GBP) and the Mexican Peso (MXN), u
     GBP / MXN = GBP / USD x USD / MXN<br>
     MXN / GBP = 1 GBP / USD  x  USD / MXN<br>
 <br>
+For GBP/MXN – to buy a variable amount of MXN per 1 GBP:<br>
+<br>
+    Bid = 1.43130 x 9.02000 = 12.91 - the bank buys GBP and sells MXN<br>
+    Offer = 1.43160 x 9.03000 = 12.93 - the bank sells GBP and buys MXN<br>
+    So GBP/MXN = 12.91 / 12.93<br>
+
+For MXN/GBP – to buy a variable amount of GBP per 1 MXN:<br>
+
+    Bid = 1 1.43160  x  9.03000 = 0.07735 - the bank buys MXN and sells GBP<br>
+    Offer = 1 1.43130  x  9.02000 = 0.07746 - the bank sells MXN and buys GBP<br>
+    So MXN/GBP = 0.07735 / 0.07746<br>
 ## Exsample of output.<br>
 23 BRITSH POUND,GBP,18.1333,18.0864,18.0061,18.6173,18.7105<br>
 30 EURO,EUR,16.1652,16.1188,16.0392,16.5989,16.6274<br>
