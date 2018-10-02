@@ -50,28 +50,44 @@ public class Get_fx_rates_from_SBSA_NP {
       //writing the time and Date
       System.out.print("Date of rate: " + fonts.get(1).text() + "\n");
 	fileContent = "Date of rate: " + fonts.get(1).text() + "\n";
+  String[][] gridArray = new String[51][8]; //50 Rows and 7 colonms of data
       //Writing all currensy values
       int item = 0;
+
       for (int i=23; i < 381; i++) {
 	      if (i == 44){
 		i++;
 	      }
+        int colunm =0;
 	 //write_Rates_to_file("test 123");
 	 //System.out.print(item + "," + fonts.get(i).text());
+   gridArray[item][colunm] = fonts.get(i).text(); //50 Rows and 7 colonms of data
 	 i++;
-         System.out.print(item + "," + fonts.get(i).text() + "ZAR");
+   colunm++;
+   System.out.print(item + "," + fonts.get(i).text() + "ZAR");
 	 fileContent = fileContent + item + "," + fonts.get(i).text() + "ZAR";
+   gridArray[item][colunm] = fonts.get(i).text();
 	 i++;
+   colunm++;
 	 System.out.print("," + fonts.get(i).text());
 	 fileContent = fileContent + "," + fonts.get(i).text();
+   gridArray[item][colunm] = fonts.get(i).text();
 	 i++;
+   colunm++;
 	 //System.out.print("," + fonts.get(i).text());
+   gridArray[item][colunm] = fonts.get(i).text();
 	 i++;
+   colunm++;
 	 //System.out.print("," + fonts.get(i).text());
+   gridArray[item][colunm] = fonts.get(i).text();
 	 i++;
+   colunm++;
 	 //System.out.print("," + fonts.get(i).text());
+   gridArray[item][colunm] = fonts.get(i).text();
 	 i++;
+   colunm++;
 	 //System.out.print("," + fonts.get(i).text() + "\n" );
+   gridArray[item][colunm] = fonts.get(i).text();
 	 System.out.print("\n");
 	 fileContent = fileContent + "\n";
 	 item++;
@@ -92,4 +108,32 @@ public class Get_fx_rates_from_SBSA_NP {
     outputStream.close();
 
   }
+  public static int calculateRateWith_new_base(int base1,int base2,int currency1,int currency2){
+/*
+To calculate the cross-rate between Sterling (GBP) and the Mexican Peso (MXN), using the US Dollar (USD) as the common currency.
+Let us assume that rates are quoted as follows:
+
+    GBPUSD = 1.43130 / 1.43160
+    USDMXN = 9.02000 / 9.03000
+
+    GBPMXN = GBP / USD x USD / MXN
+    MXN / GBP = 1 /GBP / USD  x  USD / MXN
+    For GBP/MXN – to buy a variable amount of MXN per 1 GBP:
+
+    Bid = 1.43130 x 9.02000 = 12.91 - the bank buys GBP and sells MXN
+    Offer = 1.43160 x 9.03000 = 12.93 - the bank sells GBP and buys MXN
+    So GBP/MXN = 12.91 / 12.93
+
+For MXN/GBP – to buy a variable amount of GBP per 1 MXN:
+
+    Bid = 1 1.43160  x  9.03000 = 0.07735 - the bank buys MXN and sells GBP
+    Offer = 1 1.43130  x  9.02000 = 0.07746 - the bank sells MXN and buys GBP
+    So MXN/GBP = 0.07735 / 0.07746
+*/
+  int bid = base1*base2;
+  int offer = currency1*currency2;
+  int calValue = bid/offer;
+
+return calValue;
+}
   }
