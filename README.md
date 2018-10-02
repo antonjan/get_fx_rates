@@ -15,7 +15,22 @@ java -cp ./jsoup-1.11.3.jar:. Get_fx_rates_from_SBSA<br>
 ## Rates update
 It looks like the Rases update every 30min so no need to get an update les than 30 min.<br> 
 Example of cron scedule.<br>
-<br>  
+<br> 
+## Configuering propertie File. 
+There is a config.properties witch defines all the currensies you want to be calculated.<br>
+Here is an exsample of the file.<br>
+filename0=Rates.csv<br>
+Currency1=AOA,GBP<br>
+Currency2=AOA,USD<br>
+Currency3=AOA,EUR<br>
+Currency4=AOA,ZAR<br>
+Currency5=AUD,ZAR<br>
+Currency6=BWP,ZAR<br>
+Currency7=CAD,ZAR<br>
+Currency8=CHF,ZAR<br>
+Currency9=CNY,ZAR<br>
+<br>
+
 ## Calculating cross currensy
 Example<br>
 <br>
